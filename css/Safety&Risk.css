@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+   
+    font-family: "Space Mono", monospace,'Inria Sans',sans-serif,Courier;
+    background-image: linear-gradient( #2a7ed2ef 0%, hsla(195, 19%, 92%, 0.925) 100%);;
+    background-attachment: fixed;
+    max-width: 1920px;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    height: auto;
+    margin: 0 auto;
+}
+/*----------------header----------------*/
+
+.message{
+    background: #336cb1;
+    color: white;
+    text-align: center;
+    font-size:1rem;
+    font-weight:lighter;
+    letter-spacing: 2px;
+    padding:20px 0;
+    font:"Space Mono", monospace;
+}
+.logo-cart{
+    display: inline;
+    margin:0 auto;
+    max-width:100%;
+    overflow:hidden; 
+}
+.logo{
+    display: flex;
+    align-items: center;  
+    float: left;
+    margin:30px 60px;
+    z-index: 1;
+}
+.main-nav{
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.537); 
+}
+
+.main-nav a{
+    font-family: monospace;
+    color: #055284;
+    font-size:20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 0.3s
+   
+}
+.main-nav a:hover{
+    color: #810b44;
+}
+.user-shopping{
+     float: right;
+    margin-top: -100px;
+}
+
+.user,.cart{
+    background-image: linear-gradient( #ebf5ffef 0%, hsla(0, 0%, 100%, 0.063) 100%);
+    padding: 33px;
+    margin: 0;
+    border: #cccccc;
+
+}
+.secondary-nav{
+    color: #055284;
+    float: right;
+    background-color: white;
+   
+    padding: 10px;
+    width: 295px;
+    flex-direction:row;
+    border-radius: 10px; 
+    top: 0;
+}
+.sun{
+    display: inline-flex;
+    background-color: white;
+    align-items: left;
+    margin: 10px;
+    border:none;
+
+}
+.news{
+    display: inline-flex;
+    background-color: white;
+    align-items: left;
+    margin: 10px;
+    border: none;
+    margin-left: 60px;
+ 
+}
+
+.sun img,.news img{
+    width:25px;
+    height: 25px;
+    padding: 5px 5px;
+}
+span{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: blod;
+    color: #055284;
+    font:'Inria Sans',sans-serif; 
+}
+span:hover{
+    color: #810b44;
+    transition: color 0.5s
+}
+/*-----------------------Safety & Risk awareness-----------------------*/
+
+#safety-risks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 160px;
+}
+
+.title-safety,
+h1 { 
+    font-family:"League Spartan",sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.text-theinformation,
+h5{
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    color: #043A5D;
+    font-weight: lighter;
+    letter-spacing: 2px
+}
+
+#safety-risks.need-help{
+    background-color: white;
+    border: #810b44;
+    border-radius: 5px;
+}
+
+.hero-button{
+    font-family: 'League Spartan', sans-serif;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #d42e5b;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 30px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+}
+.hero-button:hover {
+    background-color: #0881d1;
+}
+.hero-button:active {
+    background-color: #810b44;
+}
+}

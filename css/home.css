@@ -21,7 +21,7 @@ img {
 
 
 
-/*-------header---*/
+/*--------------header------------*/
 
 .message {
     background: #336cb1;
@@ -129,6 +129,8 @@ span:hover {
     align-items: center;
     text-align: center;
     margin-top: 160px;
+    background-color: pink;
+  
 }
 h1 {
     font-family: 'League Spartan', sans-serif;
@@ -186,7 +188,7 @@ h6 {
 }
 
 .heroimage {
-    aspect-ratio: auto 1920 / 782;
+   
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -407,16 +409,13 @@ h2 {
     background-color: #0881d1;
 }
 
-/*------------------INFO SESSIONS------------------*/
-
-/*------------------HAVE A QUESTIONS------------------*/
 
 
 /*-----------------------Safety & Risk awareness-----------------------*/
 
 
 
-.theinformation{
+h5{
     font-size: 1.4rem;
     margin-top: 20px;
     margin-bottom: 70px;
@@ -425,7 +424,7 @@ h2 {
     letter-spacing: 2px
 }
 
-.needhelp {
+.needhelp-container {
     display: inline-block;
     background-image: linear-gradient(to top right,#ffffffd6,#ffffff21);
     border: 1px solid #810b44;
@@ -433,6 +432,7 @@ h2 {
     padding: 30px 75px;
     margin:0 auto;
     font-size: 1.1rem;
+    margin-bottom: 50px;
 }
 .title-needhelp{
     font-family: "League Spartan",sans-serif;
@@ -614,6 +614,9 @@ h2 {
     z-index: 1;
     margin: 0 auto;
 }
+.text-avalanche{
+    line-height: 2.5;
+}
 /*------------------know section------------------*/ 
 
 #know{
@@ -640,6 +643,7 @@ h2 {
     font-size: 1.15rem;
     font-family: 'Inria Sans', sans-serif;
     color: #043A5D;
+    line-height: 2.5;
 }
 .read-more {
     display: flex;
@@ -685,10 +689,11 @@ h2 {
     padding: 70px 70px;
     border-radius: 12px;
 }
-.text-skiing,p{
+.text-skiing{
     color: #043A5D;
     font-size: 1.2rem;
     font-family: 'Inria Sans', sans-serif;
+    line-height: 2.5;
 }
 .sking-download {
     display: flex;
@@ -740,6 +745,28 @@ h2 {
     color: #043A5D;
     font-size: 1.3rem;
 }
+
+/*------------------footer------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,974 +1,937 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Space Mono', monospace, 'Inria Sans', sans-serif, Courier;
-    background-image: linear-gradient( #2a7ed2ef 0%, hsla(195, 19%, 92%, 0.925) 100%);
-    background-attachment: fixed;
-    max-width: 1920px;
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    height: auto;
-    margin: 0 auto;
+  font-family: "Space Mono", monospace, "Inria Sans", sans-serif, Courier;
+  background-image: linear-gradient(
+    #2a7ed2ef 0%,
+    hsla(195, 19%, 92%, 0.925) 100%
+  );
+  background-attachment: fixed;
+  max-width: 1920px;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  height: auto;
+  margin: 0 auto;
 }
 
 /*---------make all images responsive-------------*/
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
-
 
 /*--------------header------------*/
 
 .message {
-    background: #336cb1;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    padding: 20px 0;
-    font-family: 'Space Mono',monospace;
+  background: #336cb1;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  font-family: "Space Mono", monospace;
 }
 .due {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 #head-top {
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    background-image:linear-gradient( #b5d5fe 0%, hsla(189, 17%, 92%, 0.817) 100%); ;
-    height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    #b5d5fe 0%,
+    hsla(189, 17%, 92%, 0.817) 100%
+  );
+  height: 100px;
 }
 .logo-cart {
-    display: flex;
-    padding: 0 80px;
-    height: 100%;
+  display: flex;
+  padding: 0 80px;
+  height: 100%;
 }
 .logo {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 .main-nav {
-    flex: 1;
-    position: relative;
-    height: 100px;
-    line-height: 100px;
+  flex: 1;
+  position: relative;
+  background: lightblue;
 }
 
 .main-nav a {
-    font-family: monospace;
-    color: #055284;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px 15px;
-    line-height: 1;
-    text-decoration: none;
-    transition: color 0.3s;
+  font-family: monospace;
+  color: #055284;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .main-nav a:hover {
-    color: #ff2893;
+  color: #ff2893;
 }
 
 .user-shopping a {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-image: linear-gradient(#ebf5ffef 0%, hsla(0, 0%, 100%, 0.063) 100%);
-    padding: 33px;
-    margin: 0;
-    border: #cccccc;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(
+    #ebf5ffef 0%,
+    hsla(0, 0%, 100%, 0.063) 100%
+  );
+  padding: 33px;
+  margin: 0;
+  border: #cccccc;
 }
 
 .user-shopping a + a {
-    border-left: 5px solid #fff;
+  border-left: 5px solid #fff;
 }
 
 .secondary-nav {
-    position: absolute;
-    top: 100%;
-    right: 200px;
-    color: #055284;
-    background-color: white;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
-    text-align: right;
+  position: absolute;
+  right: 15rem;
+  bottom: -7rem;
+  color: #055284;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  text-align: right;
 }
 .secondary-nav a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .secondary-nav img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 span {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #055284;
-    font-family: 'Inria Sans', sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #055284;
+  font-family: "Inria Sans", sans-serif;
 }
 span:hover {
-    color: #810b44;
-    transition: color 0.5s;
+  color: #810b44;
+  transition: color 0.5s;
 }
-
-
 
 /*---------------------hero-section--------------------*/
 
 #hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 160px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 160px;
 }
 h1 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 4.2rem;
-    font-weight: bold;
-    color: white;
-    margin-top: 3rem;
-    letter-spacing: 2px;
-    text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 4.2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
 }
 h4 {
-    text-align: center;
-    font-family: monospace;
-    font-size: 1.6rem;
-    color: white !important;
-    font-weight: lighter;
-    letter-spacing: 2px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.6rem;
+  color: white !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 .hypothermia {
-    font-size: 1.4rem;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    color: #043a5d;
-    font-weight: lighter;
-    letter-spacing: 2px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  color: #043a5d;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 .three-five {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .threegroup,
 .fivegroup,
 .twelvegroup {
-    text-align: center;
-    margin: 0 60px;
+  text-align: center;
+  margin: 0 60px;
 }
 h3 {
-    font-family: 'League Spartan', sans-serif;
-    font-weight: bold;
-    color: #c2005e;
-    font-size: 2rem;
-    margin: 5px 5px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  color: #c2005e;
+  font-size: 2rem;
+  margin: 5px 5px;
 }
 h6 {
-    font-size: 1rem;
-    color: #3a0f24;
-    font-weight: lighter;
-    margin-top: 5px;
-    letter-spacing: 2px;
-    white-space: nowrap;
+  font-size: 1rem;
+  color: #3a0f24;
+  font-weight: lighter;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .heroimage {
-   
-    width: 100%;
-    height: auto;
-    margin-top: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
 }
 
 .button1 {
-    font-family: 'Space Mono', monospace;
-    margin: 0 auto;
-    margin-top: 40px;
-    background-color: #d42e5b;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    padding: 30px 30px;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    color: white;
-    letter-spacing: 2px;
+  font-family: "Space Mono", monospace;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #d42e5b;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 30px 30px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: white;
+  letter-spacing: 2px;
 }
 .button1:hover {
-    background-color: #0881d1;
+  background-color: #0881d1;
 }
 .button1:active {
-    background-color: #810b44;
+  background-color: #810b44;
 }
 
 /*------------------skining risks------------------*/
 
 #skiingrisk {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
 }
-.red-sking,h2 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-     color:D42E5B;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 0;
+.red-sking,
+h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: D42E5B;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0;
 }
 .skiing-snowboarding {
-    color: #5f1529;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.2rem;
-    margin: 75px auto;
+  color: #5f1529;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 75px auto;
 }
 .skiing-button {
-    max-width: 1274px;
-    background-color:#F2F5FB;
-    border-radius: 12px;
-    border: 1px solid #5f1529;
-    flex-direction: column;
-    align-items: center;
-    letter-spacing: 2px;
-    font-size: 1.1rem;
+  max-width: 1274px;
+  background-color: #f2f5fb;
+  border-radius: 12px;
+  border: 1px solid #5f1529;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
 }
 .skiing-button p {
-    background-color: #f2f5fb;
-    text-align: left;
-    padding-top:100px;
-    padding-left: 105px;
-    padding-right: 105px;
-    line-height: 2.5rem;
-    color: #043a5d;
-    font-size: 1.2rem;
+  background-color: #f2f5fb;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 105px;
+  padding-right: 105px;
+  line-height: 2.5rem;
+  color: #043a5d;
+  font-size: 1.2rem;
 }
 .button2 {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .button2,
 .button3,
 .button4,
 .button5,
 .button6,
-.button7{
-    font-family: 'Space Mono', monospace;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: #d42e5b;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    padding: 12px 18px;
-    cursor: pointer;
-    border: none;
-    color: white;
+.button7 {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #d42e5b;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 12px 18px;
+  cursor: pointer;
+  border: none;
+  color: white;
 }
 .button2:hover,
 .button3:hover,
 .button4:hover,
 .button5:hover,
 .button6:hover,
-button7:hover
- {
-    background-color: #0881d1;
+button7:hover {
+  background-color: #0881d1;
 }
 .button2:active,
 .button3:active,
 .button4:active,
 .button5:active,
 .button6:active,
-button7:active
-{
-    background-color: #810b44;
+button7:active {
+  background-color: #810b44;
 }
 
 /*------------------four-pictures------------------*/
 
 #four-pictures {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 120px;
-    grid-gap: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 120px;
+  grid-gap: 0;
 }
 #four-pictures img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 .P1,
 .P2,
 .P3,
 .P4 {
-    width: 100%;
-    height: auto;
-    position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .P1 p,
 .P2 p,
 .P3 p,
 .P4 p {
-    position: absolute;
-    left: 50px;
-    top: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 1.8rem;
-    font-weight: bold;
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .P1 .button3,
 .P2 .button4,
 .P3 .button5,
 .P4 .button6 {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    z-index: 1;
-    margin: 0 auto;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1;
+  margin: 0 auto;
 }
-
 
 /*------------------follow us------------------*/
 
 #followus {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 160px;
-    margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 160px;
 }
 .Follow,
 h2 {
-    color: rgb(31, 89, 175);
-    font-family: 'League Spartan', sans-serif;
-    font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 0;
+  color: rgb(31, 89, 175);
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0;
 }
 .seewhat {
-    color: rgb(31, 89, 175);
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.2rem;
-    margin: 60px auto;
+  color: rgb(31, 89, 175);
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 60px auto;
 }
 
 .kalmontski {
-    background-color:#F2F5FB;
-    max-width: 1274px;
-    margin: 20px auto;
-    border-radius: 12px;
-    color: #043a5d;
-    font-size: 1.1rem;
-    overflow: hidden;
+  background-color: #f2f5fb;
+  max-width: 1274px;
+  margin: 20px auto;
+  border-radius: 12px;
+  color: #043a5d;
+  font-size: 1.1rem;
+  overflow: hidden;
 }
 .ka {
-    text-align: left;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 1.4rem;
-    font-family: 'League Spartan', sans-serif;
-    color: #0881d1;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: "League Spartan", sans-serif;
+  color: #0881d1;
 }
 .image-container {
-    display: inline-flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
+  display: inline-flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 .image-container img {
-    margin: 20px auto;
-    width: 100%;
-    height: auto;
-    padding: 0;
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 
 .button7 {
-    margin: 20px auto;
-    margin-bottom: 40px;
-    background-color: #0881d1;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  background-color: #0881d1;
 }
-
-
 
 /*-----------------------Safety & Risk awareness-----------------------*/
 
-
-
-h5{
-    font-size: 1.4rem;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    color: #043A5D;
-    font-weight: lighter;
-    letter-spacing: 2px
+h5 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  color: #043a5d;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 .needhelp-container {
-    display: inline-block;
-    background-image: linear-gradient(to top right,#ffffffd6,#ffffff21);
-    border: 1px solid #810b44;
-    border-radius: 12px;
-    padding: 30px 75px;
-    margin:0 auto;
-    font-size: 1.1rem;
-    margin-bottom: 50px;
+  display: inline-block;
+  background-image: linear-gradient(to top right, #ffffffd6, #ffffff21);
+  border: 1px solid #810b44;
+  border-radius: 12px;
+  padding: 30px 75px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
 }
-.title-needhelp{
-    font-family: "League Spartan",sans-serif;
-    color: #D42E5B;
-    font-size: 2rem;
-    font-weight: blod;
-    padding: 0;
-    letter-spacing: 2px;
-} 
-.patrol{
-    font-family: 'Space Mono', monospace;
-    font-size: 1.1rem;
-    color: #5F1529;
-    letter-spacing: 2px;
+.title-needhelp {
+  font-family: "League Spartan", sans-serif;
+  color: #d42e5b;
+  font-size: 2rem;
+  font-weight: blod;
+  padding: 0;
+  letter-spacing: 2px;
 }
-
-
+.patrol {
+  font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
+  color: #5f1529;
+  letter-spacing: 2px;
+}
 
 /*------------------exclusion------------------*/
 
 #exclusion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 160px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
 }
 .title-exclusion,
 h2 {
-    color:#d42e5b;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 50px;
+  color: #d42e5b;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.image-text{
-    max-width: 100%;
-    padding: 1rem 1rem 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-
+.image-text {
+  max-width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: row;
 }
-.img-text-button{
-    background-color:#F2F5FB;
-    align-items: center;
-    border-radius: 12px;
-    width: 100%;
+.img-text-button {
+  background-color: #f2f5fb;
+  align-items: center;
+  border-radius: 12px;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
-.exclusionimag{
-    flex:50%;
-
-}  
-.exclusion-text{
-    flex:50%;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 1.2rem;
-    margin-left: 70px;
-    line-height: 2.5;
-    color: #043A5D;
-
+.exclusionimag {
+  flex: 50%;
+}
+.exclusion-text {
+  flex: 50%;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 70px;
+  line-height: 2.5;
+  color: #043a5d;
 }
 
-.exclusion-button:hover{
-    background-color: #0881d1;
+.exclusion-button:hover {
+  background-color: #0881d1;
 }
-.exclusion-button:active{
-    background-color: #810b44;
-    
+.exclusion-button:active {
+  background-color: #810b44;
 }
 
-.button-align{
-    width: 100%;
-    text-align: center;
-    padding: 3rem;
-
+.button-align {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
 }
 /*------------------Alpine responsibility code------------------*/
 
-#alpine{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 160px;
+#alpine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
 }
-.text-button-img{
-    display: flex;
-    background-color:#F2F5FB;
-    max-width: 1274px;
-    padding: 70px 70px;
-    border-radius: 12px; 
+.text-button-img {
+  display: flex;
+  background-color: #f2f5fb;
+  max-width: 1274px;
+  padding: 70px 70px;
+  border-radius: 12px;
 }
 
-.text-thealpine{
-  
-    font-family:'Inria Sans', sans-serif;
-    font-size: 1.2rem;
-    line-height: 2.5;
-    margin-left: 0;
-    text-align: left;
-    color: #043A5D;
-
+.text-thealpine {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  margin-left: 0;
+  text-align: left;
+  color: #043a5d;
 }
 .download-button,
 .h-button,
-.a-button{
-    font-family: 'Space Mono', monospace;
-    background-color: #d42e5b;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    padding: 12px 18px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    }
+.a-button {
+  font-family: "Space Mono", monospace;
+  background-color: #d42e5b;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 12px 18px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
 .download-button:hover,
 .h-button:hover,
-.a-button:hover{
-    background-color: #0881d1;
+.a-button:hover {
+  background-color: #0881d1;
 }
 .download-button:active,
 .h-button:active,
-.a-button:active{
-    background-color: #810b44;  
+.a-button:active {
+  background-color: #810b44;
 }
-.alpine-buttton{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+.alpine-buttton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.alpine-photo{
-    flex:50%;
-    margin-left: 70px;
-} 
-.safty-middleimage{
-    margin-top: 80px;
+.alpine-photo {
+  flex: 50%;
+  margin-left: 70px;
 }
-
+.safty-middleimage {
+  margin-top: 80px;
+}
 
 /*------------------avalanche hypothermia-two pictures------------------*/
 
-#Av-Hy{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 120px;
-    grid-gap: 0;
+#Av-Hy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 120px;
+  grid-gap: 0;
 }
-#Av-hy img{
-    max-width: 100%;
-    height: auto;
+#Av-hy img {
+  max-width: 100%;
+  height: auto;
 }
 .image1-a,
-.image2-h{
-    width: 100%;
-    height: auto;
-    position: relative;
+.image2-h {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 .image1-a .text-a,
-.image2-h .text-h{
-    position: absolute;
-    left: 50px;
-    top: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 1.8rem;
-    font-weight: bold;
+.image2-h .text-h {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .image1-a .a-button,
-.image2-h .h-button{
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    z-index: 1;
-    margin: 0 auto;
+.image2-h .h-button {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1;
+  margin: 0 auto;
 }
-.text-avalanche{
-    line-height: 2.5;
+.text-avalanche {
+  line-height: 2.5;
 }
-/*------------------know section------------------*/ 
+/*------------------know section------------------*/
 
-#know{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
+#know {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
 }
-.know-h2{
-    color:#0881D1;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-align: center;  
+.know-h2 {
+  color: #0881d1;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
 }
-.t-container{
-    background-color:#F2F5FB;
-     width: 1274px;
-    padding: 70px 70px;
-    border-radius: 12px；   
+.t-container {
+  background-color: #f2f5fb;
+  width: 1274px;
+  padding: 70px 70px;
+  border-radius: 12px；;
 }
-.text-in{
-    margin-left: 0;
-    font-size: 1.15rem;
-    font-family: 'Inria Sans', sans-serif;
-    color: #043A5D;
-    line-height: 2.5;
+.text-in {
+  margin-left: 0;
+  font-size: 1.15rem;
+  font-family: "Inria Sans", sans-serif;
+  color: #043a5d;
+  line-height: 2.5;
 }
 .read-more {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-family: 'Space Mono', monospace;
-    background-color:#0881D1;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    padding: 12px 18px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    margin: 0 auto;   
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: "Space Mono", monospace;
+  background-color: #0881d1;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 12px 18px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin: 0 auto;
 }
-.read-more:hover{
-    background-color: #810b44;     
+.read-more:hover {
+  background-color: #810b44;
 }
-.read-more:active{
-    background-color: #0881d1;
+.read-more:active {
+  background-color: #0881d1;
 }
-
 
 /*----------------------skiing-risks------------------*/
 
-#skiing-risks{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin-top: 120px; 
+#skiing-risks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
 }
-.title-skiingrisks{ 
-    color:#0881D1;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
+.title-skiingrisks {
+  color: #0881d1;
+  font-family: "League Spartan", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
 }
-.text-button-container2{
-    background-color:#F2F5FB;
-     width: 1274px;
-    padding: 70px 70px;
-    border-radius: 12px;
+.text-button-container2 {
+  background-color: #f2f5fb;
+  width: 1274px;
+  padding: 70px 70px;
+  border-radius: 12px;
 }
-.text-skiing{
-    color: #043A5D;
-    font-size: 1.2rem;
-    font-family: 'Inria Sans', sans-serif;
-    line-height: 2.5;
+.text-skiing {
+  color: #043a5d;
+  font-size: 1.2rem;
+  font-family: "Inria Sans", sans-serif;
+  line-height: 2.5;
 }
 .sking-download {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-family: 'Space Mono', monospace;
-    background-color:#0881D1;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    padding: 12px 18px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    margin: 0 auto;   
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: "Space Mono", monospace;
+  background-color: #0881d1;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 12px 18px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin: 0 auto;
+  justify-content: space-around;
 }
-.sking-download:hover{
-    background-color: #0881d1; 
+.sking-download:hover {
+  background-color: #0881d1;
 }
-.sking-download:active{
-    background-color: #810b44;   
+.sking-download:active {
+  background-color: #810b44;
 }
 /*----------------------avalanche risks------------------*/
 
 #Avalanche-Risks {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin-top: 120px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
 }
-.title-Avalanche{
-    color:#0881D1;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
+.title-Avalanche {
+  color: #0881d1;
+  font-family: "League Spartan", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
 }
-.text-avalanche-container{
-    background-color: white;
-    width: 1274px;
-    padding: 70px 70px;
-    border-radius: 12px; 
-    margin-bottom: 50px;
+.text-avalanche-container {
+  background-color: white;
+  width: 1274px;
+  padding: 70px 70px;
+  border-radius: 12px;
+  margin-bottom: 50px;
 }
-.text-avalanche,p{
-    color: #043A5D;
-    font-size: 1.3rem;
+.text-avalanche,
+p {
+  color: #043a5d;
+  font-size: 1.3rem;
 }
 
 /*------------------KAMONT SKI MAP------------------*/
-#ski-map-section{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
+#ski-map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
 }
-.mapbutton,button{
-    margin-top: 50px;
+.mapbutton,
+button {
+  margin-top: 50px;
 }
 
 /*------------------signage------------------*/
-#signage-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
+#signage-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
 }
-.these-text{
-    text-align: center;
-    color: #3a0f24;
-    font-size:1.3rem ;
-
+.these-text {
+  text-align: center;
+  color: #3a0f24;
+  font-size: 1.3rem;
 }
-.sign-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #F2F5FB;
-    padding: 8rem 8rem;
-    max-width: 65%;
-    border-radius: 12px;
+.sign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f5fb;
+  padding: 8rem 8rem;
+  max-width: 65%;
+  border-radius: 12px;
 }
-.e-a-container,.m-a-container,
-.md-container,.e-o-container{
-
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    margin-bottom: 30px;
-    background-color: #5F1529;
-    
+.info-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: lighblue;
+  width: 100%;
+  height: 20rem;
 }
-.sign-container p{
-    font-size: 1.2rem;
-    line-height: 2;
-    color: #043A5D;
-    margin-left: 50px;
-}
-.sign-container img{
-    width: 100%;
-    align-items: center;
+.all-text {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #043a5d;
+  width: 80%;
 }
 
-#glade-tips{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
-    margin-bottom: 120px;
+.icon {
+  width: 20%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#glade-tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
 
 /*------------------footer------------------*/
 footer {
-    display: flex;
-    max-width: 1920px;
-    position: relative;
-    padding: 3rem;
-    background-color: #336cb1;
+  display: flex;
+  max-width: 1920px;
+  position: relative;
+  padding: 3rem;
+  background-color: #336cb1;
 }
 .footer-left {
-    flex: 20%;
-    margin-top: 20px;
-    flex-direction: column;
-    margin-left: 160px;
-    padding-top: 0; 
+  flex: 20%;
+  margin-top: 20px;
+  flex-direction: column;
+  margin-left: 160px;
+  padding-top: 0;
 }
 .call {
-    display: block;
-    font-size: 1rem;
-    padding: 14px 18px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    color: #c2005e;
-    margin-bottom: 20px;
-    margin-top: 0;
+  display: block;
+  font-size: 1rem;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: #c2005e;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .call:hover {
-    background: #0881d1;
-    color: #ffffff;
+  background: #0881d1;
+  color: #ffffff;
 }
 .callpatrol {
-    font-size: 0.8rem;
-    background-color: #c2005e;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 18px;
-    margin-top: 10px;
+  font-size: 0.8rem;
+  background-color: #c2005e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 18px;
+  margin-top: 10px;
 }
 .callpatrol:hover {
-    background: #0881d1;
-    color: #ffffff;
+  background: #0881d1;
+  color: #ffffff;
 }
 .stay {
-    margin-top: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
+  margin-top: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
 }
 .sign-up-for {
-    font-size: 0.8rem;
-    background-color: #0881D1;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 14px 18px;
-    margin-top: 0;
+  font-size: 0.8rem;
+  background-color: #0881d1;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 18px;
+  margin-top: 0;
 }
 
 .footer-middle {
-    flex: 60%;
-    align-items: center;
-    margin-top: 20px;
-    padding-left: 30px;   
+  flex: 60%;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 30px;
 }
 
 .footer-nav1 {
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.2rem;
 }
 .footer-nav1 a {
-    display: block;
-    font-weight: bold;
-    font-family: 'Inria Sans', sans-serif;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    text-decoration: none;
-    transition: color 0.3s;
-    color: #ffffff;
-    margin-bottom: .3em;
+  display: block;
+  font-weight: bold;
+  font-family: "Inria Sans", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: color 0.3s;
+  color: #ffffff;
+  margin-bottom: 0.3em;
 }
 .footer-nav1 a:hover {
-    color: #810b44;
+  color: #810b44;
 }
 .footer-nav1 .link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .footer-nav1 .link img {
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
 }
 .footer-nav1 .link span {
-    color: #ffffff;
-    font-size: 100%;
-    padding: 0;
+  color: #ffffff;
+  font-size: 100%;
+  padding: 0;
 }
 
 .copyright {
-    font-size: 1.1rem;
-    font-weight: lighter;
-   
-    padding-top: 10px;
-    margin-top: 40px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+
+  padding-top: 10px;
+  margin-top: 40px;
 }
-.copyright p{
-    margin-bottom: 1rem;
-    color: #e8f8ff;
-    letter-spacing: 2px;
+.copyright p {
+  margin-bottom: 1rem;
+  color: #e8f8ff;
+  letter-spacing: 2px;
 }
 
 .footer-right {
-    flex: 20%;
-    margin-top: 20px;
-    margin-right: 160px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: #ffffff;
-    font-size: 1.1rem;
-   
+  flex: 20%;
+  margin-top: 20px;
+  margin-right: 160px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 
 .footer-right .logo {
-    float: none;
-    margin: 0 0 20px;
-    width: 191px;
-    display: block;
+  float: none;
+  margin: 0 0 20px;
+  width: 191px;
+  display: block;
 }
-.contact,p{
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 1.1rem;
-    color: white;
-
+.contact,
+p {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.1rem;
+  color: white;
 }
 .footer-right a {
-    color: inherit;
+  color: inherit;
 }
-.social{
-    font-weight:bold;
+.social {
+  font-weight: bold;
 }
-.social-image{
-    display: flex;
+.social-image {
+  display: flex;
 }

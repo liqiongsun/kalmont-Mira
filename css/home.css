@@ -62,7 +62,7 @@ img {
 }
 
 .main-nav a {
-  font-family: monospace;
+  font-family: "Inria Sans", sans-serif;
   color: #055284;
   font-size: 20px;
   font-weight: bold;
@@ -73,7 +73,7 @@ img {
   transition: color 0.3s;
 }
 .main-nav a:hover {
-  color: #ff2893;
+  color: #861D3A;
 }
 
 .user-shopping a {

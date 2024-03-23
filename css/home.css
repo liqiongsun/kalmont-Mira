@@ -242,7 +242,7 @@ h2 {
   margin: 75px auto;
 }
 .skiing-button {
-  max-width: 1274px;
+  max-width: 75%;
   background-color: #f2f5fb;
   border-radius: 12px;
   border: 1px solid #5f1529;
@@ -374,7 +374,7 @@ h2 {
 
 .kalmontski {
   background-color: #f2f5fb;
-  max-width: 1274px;
+  max-width: 75%;
   margin: 20px auto;
   border-radius: 12px;
   color: #043a5d;
@@ -630,23 +630,23 @@ h2 {
   color: #043a5d;
   line-height: 2.5;
 }
-.read-more {
+.read-more1 {
   font-family: "Space Mono", monospace;
   background-color: #0881d1;
   border-radius: 12px;
   font-size: 1.2rem;
   font-weight: lighter;
   padding: 12px 18px;
-  cursor: pointer;
+ 
   border: none;
   color: white;
   margin: 0 auto;
-  display: inline-block;
+  display: flex;
 }
-.read-more:hover {
-  background-color: #810b44;
+.read-more1:hover {
+  background-color: #b30057;
 }
-.read-more:active {
+.read-more1:active {
   background-color: #0881d1;
 }
 
@@ -667,7 +667,7 @@ h2 {
 }
 .text-button-container2 {
   background-color: #f2f5fb;
-  width: 1274px;
+  width: 75%;
   padding: 70px 70px;
   border-radius: 12px;
 }
@@ -679,8 +679,7 @@ h2 {
 }
 .sking-download {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
   font-family: "Space Mono", monospace;
   background-color: #0881d1;
   border-radius: 12px;
@@ -694,7 +693,7 @@ h2 {
   justify-content: space-around;
 }
 .sking-download:hover {
-  background-color: #0881d1;
+  background-color: #b30057;
 }
 .sking-download:active {
   background-color: #810b44;
@@ -716,7 +715,7 @@ h2 {
 }
 .text-avalanche-container {
   background-color: white;
-  width: 1274px;
+  width: 75%;
   padding: 70px 70px;
   border-radius: 12px;
   margin-bottom: 50px;
@@ -765,7 +764,6 @@ button {
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
-  background-color: lightblue;
   width: 100%;
   height: 20rem;
 }
@@ -779,7 +777,30 @@ button {
 .icon {
   width: 20%;
 }
+
+
 /*------------------Safety initiatives------------------*/
+.buttonx {
+  font-family: "Space Mono", monospace;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  background-color: #0d6462;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 30px 30px;
+ 
+  border: none;
+  color: white;
+  letter-spacing: 2px;
+}
+.buttonx:hover {
+  background-color: #0881d1;
+}
+.buttonx:active {
+  background-color: #810b44;
+}
+}
 
 #safety-initiatives {
   display: flex;
@@ -816,6 +837,7 @@ button {
   align-items: center;
   background-color: #dbf1ed;
   width: 100%;
+  margin-top: 120px;
 }
 .green-title {
   margin-top: 50px;
@@ -827,7 +849,7 @@ button {
 }
 .search-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 0;
@@ -875,13 +897,14 @@ input[type="text"] {
   color: #0d6462;
 }
 .text-img-button-box {
-  background-color: #0d6462;
+  background-color: #e5f9f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 75%;
   padding: 70px 70px;
   border-radius: 12px;
+  color: #0d6462;
 }
 .text-img {
   display: flex;
@@ -893,6 +916,7 @@ input[type="text"] {
   line-height: 2.5;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  color: #003e37;
 }
 .help-image {
   flex: 50%;
@@ -902,7 +926,25 @@ input[type="text"] {
   margin-right: 0;
   padding-right: 0;
 }
-
+.green-download {
+  font-family: "Space Mono", monospace;
+  background-color: #0d6462;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  padding: 12px 18px;
+  border: none;
+  color: white;
+  margin: 0 auto;
+}
+.green-download:hover {
+  background-color: #0881d1;
+}
+.green-download:active {
+  background-color:#810b44;
+}
+.mission-pic{
+  margin-bottom: 80px;
+}
 /*-------------about-us----------------*/
 
 /*-------------hero section---------------*/
@@ -972,7 +1014,18 @@ input[type="text"] {
 .middle-image {
   margin-bottom: 120px;
 }
-
+/*--------------------------------service-------------------------*/
+#service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 100%;
+}
+.blue-service{
+  color:#0881d1;
+}
 /*--------------------------------our team--------------------------*/
 #our-team {
   display: grid;
@@ -987,23 +1040,25 @@ input[type="text"] {
   border-radius: 12px;
   margin: 50px auto;
 }
-.title-our-team {
+.title-our-teams {
   color: #0881d1;
-  padding-top: 15rem;
 }
 #our-team .item .title {
   color: #0664a2;
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: 20px 0;
 }
 #our-team .item .subtitle {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 1rem;
   text-align: left;
   color: #0664a2;
   text-transform: uppercase;
+  letter-spacing: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .our-team-title {
@@ -1018,6 +1073,7 @@ input[type="text"] {
   font-size: 18px;
   color: #043a5d;
   padding-top: 20px;
+  margin-bottom: 2rem;
 }
 #our-team .item .desc:before {
   content: "";
@@ -1029,24 +1085,35 @@ input[type="text"] {
   width: 100%;
   opacity: 0.5;
 }
-#our-team .item .read-more {
+.read-more {
   color: #fff;
   background: #0881d1;
   border-radius: 6px;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   text-decoration: none;
+  border: none;
+}
+.read-more:hover{
+    background-color: #b30057;
+  }
+.read-more:active {
+    background-color: #0881d1;
 }
 #our-team .item.hero {
   grid-column: span 3;
   display: flex;
   flex-direction: row-reverse;
+
 }
 #our-team .item.hero .text-box {
-  width: 30%;
+  width: 35%;
   margin-right: 8%;
 }
 #our-team .item.hero .title {
-  font-size: 62px;
+  font-size: 3rem;
+  color: #0881d1;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 #our-team .item.hero .desc:before {
   width: 60%;
@@ -1060,6 +1127,7 @@ input[type="text"] {
   font-family: "Space Mono", monospace;
   font-weight: lighter;
 }
+
 
 /*------------------footer------------------*/
 footer {
@@ -1106,7 +1174,7 @@ footer {
   color: #ffffff;
 }
 .stay {
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1.1rem;
   font-weight: bold;
   color: white;

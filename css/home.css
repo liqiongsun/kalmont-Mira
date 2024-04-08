@@ -71,7 +71,7 @@ img {
   line-height: 1;
   text-decoration: none;
   transition: color 0.8s;
-  letter-spacing: ;
+  letter-spacing:2px;
 }
 .main-nav a:hover {
   color: #861D3A;
